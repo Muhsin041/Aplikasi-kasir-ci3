@@ -7,12 +7,19 @@ class Fungsi
     {
         $this->ci = &get_instance();
     }
-    public function admin_login()
+    public function user_login()
     {
         $this->ci->load->model('mlogin');
-        $admin_id = $this->ci->session->userdata('id_admin');
+        $admin_id = $this->ci->session->userdata('id_user');
         $admin_data = $this->ci->mlogin->get($admin_id)->row();
         return $admin_data;
+    }
+    public function cs_login()
+    {
+        $this->ci->load->model('Mplg');
+        $cs_id = $this->ci->session->userdata('id_customer');
+        $cs_data = $this->ci->Mplg->get($cs_id);
+        return !empty($cs_data) ? $cs_data[0] : null;
     }
 
 

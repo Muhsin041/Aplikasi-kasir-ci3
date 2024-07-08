@@ -99,7 +99,7 @@
                             Don't have an account? <a href="auth-register.html">Create One</a>
                         </div>
                         <div class="simple-footer">
-                            Copyright &copy; Muhsin 2024
+                            Copyright &copy; <a href="<?= base_url('auth') ?>">Muhsin</a> 2024
                         </div>
                     </div>
                 </div>

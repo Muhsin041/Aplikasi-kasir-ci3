@@ -64,6 +64,6 @@ class Mplg extends CI_Model
             $this->db->where('id_customer', $id);
         }
         $query = $this->db->get();
-        return $query->result();
+        return $id != null ? $query->row() : $query->result();;
     }
 }

@@ -14,11 +14,11 @@ class Auth extends CI_Controller
         check_already_login();
         $this->load->view('login');
     }
-    // function customer()
-    // {
-    //     check_already_login();
-    //     $this->load->view('customer/login');
-    // }
+    function customer()
+    {
+        check_already_login();
+        $this->load->view('customer/login');
+    }
 
     public function process()
     {
@@ -64,14 +64,14 @@ class Auth extends CI_Controller
 
                 // Set the session data with the user ID
                 $params = array(
-                    'id_user' => $row->id_user,
+                    'id_customer' => $row->id_costumer,
                 );
                 $this->session->set_userdata($params);
-
+                // var_dump();
                 // Redirect to the customer dashboard with a success message
                 echo "<script>
                 alert('Selamat. Login Berhasil');
-                window.location='" . site_url('customer/dashboard') . "';
+                window.location='" . site_url('onlineshop') . "';
                 </script>";
             } else {
                 // Set a flash message for incorrect username or password
@@ -86,6 +86,12 @@ class Auth extends CI_Controller
                 redirect('auth/customer');
             }
         }
+    }
+    function cs_logout()
+    {
+        $params = array('id_customer');
+        $this->session->unset_userdata($params);
+        redirect('auth/customer');
     }
 
     function logout()

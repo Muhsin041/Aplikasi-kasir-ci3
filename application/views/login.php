@@ -105,11 +105,8 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="mt-5 text-muted text-center">
-                            Don't have an account? <a href="auth-register.html">Create One</a>
-                        </div>
                         <div class="simple-footer">
-                            Copyright &copy; Muhsin 2024
+                            Copyright &copy;<a href="<?= base_url('auth/customer') ?>">Muhsin</a> 2024
                         </div>
                     </div>
                 </div>

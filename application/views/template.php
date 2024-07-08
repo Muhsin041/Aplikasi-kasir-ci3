@@ -81,8 +81,8 @@
                         </div>
                     </li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="<?= base_url('./upload/user/' . $this->fungsi->admin_login()->gambar) ?>" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block"><span><?= $this->fungsi->admin_login()->name ?></span></div>
+                            <img alt="image" src="<?= base_url('./upload/user/' . $this->fungsi->user_login()->gambar) ?>" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block"><span><?= $this->fungsi->user_login()->name ?></span></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a href="features-profile.html" class="dropdown-item has-icon">
@@ -142,7 +142,7 @@
                         <li <?= $this->uri->segment(1) == 'laporan' || $this->uri->segment(1) == ''  ? 'class=active' : '' ?>>
                             <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i><span>Laporan</span> </a>
                         </li>
-                        <?php if ($this->fungsi->admin_login()->akses == 1) { ?>
+                        <?php if ($this->fungsi->user_login()->akses == 1) { ?>
                             <li class="menu-header">Setting</li>
                             <li <?= $this->uri->segment(1) == 'users' ? 'class=active' : '' ?>>
                                 <a href="<?= base_url('users') ?>" class="nav-link "><i class="fas fa-users"></i><span>Pengguna</span></a>
