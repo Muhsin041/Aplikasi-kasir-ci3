@@ -68,8 +68,8 @@
                     </div>
                     <button type="sumbit" class="btn btn-primary m-3">Simpan</button>
                     <button type="reset" class="btn btn-warning m-3">Reset</button>
+                </form>
             </div>
-            </form>
         </div>
     </section>
 </div>

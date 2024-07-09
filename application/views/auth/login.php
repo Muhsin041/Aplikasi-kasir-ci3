@@ -114,14 +114,6 @@
         </section>
     </div>
     <script>
-        // function myFunction() {
-        //     var x = document.getElementById("password");
-        //     if (x.type === "password") {
-        //         x.type = "text";
-        //     } else {
-        //         x.type = "password";
-        //     }
-        // }
         document.getElementById("showPassword").addEventListener("click", function() {
             var passwordInput = document.getElementById("password");
             var eyeIcon = document.querySelector("#showPassword i.fas");

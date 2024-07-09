@@ -68,15 +68,6 @@
                             </div>
                             <div class="dropdown-list-content dropdown-list-message">
                                 <a href="#" class="dropdown-item dropdown-item-unread">
-                                    <div class="dropdown-item-avatar">
-                                        <img alt="image" src="<?= base_url() ?>assets/img/avatar/avatar-1.png" class="rounded-circle">
-                                        <div class="is-online"></div>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Kusnaedi</b>
-                                        <p>Hello, Bro!</p>
-                                        <div class="time">10 Hours Ago</div>
-                                    </div>
                                 </a>
                             </div>
                             <div class="dropdown-footer text-center">
@@ -88,7 +79,7 @@
                         <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="fas fa-shopping-cart"></i></a>
                     </li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="<?= base_url('./upload/user/' . $this->fungsi->cs_login()->gambar) ?>" class="rounded-circle mr-1">
+                            <img alt="image" src="<?= base_url('./upload/plg/' . $this->fungsi->cs_login()->gambar) ?>" class="rounded-circle mr-1">
                             <div class="d-sm-none d-lg-inline-block">Hi, <?= $this->fungsi->cs_login()->nama; ?></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">

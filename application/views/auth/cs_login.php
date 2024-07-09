@@ -96,10 +96,10 @@
                             </div>
                         </div>
                         <div class="mt-5 text-muted text-center">
-                            Don't have an account? <a href="auth-register.html">Create One</a>
+                            Don't have an account? <a href="<?= base_url('auth/customer_register') ?>">Create One</a>
                         </div>
                         <div class="simple-footer">
-                            Copyright &copy; <a href="<?= base_url('auth') ?>">Muhsin</a> 2024
+                            Copyright &copy; <a href="<?= base_url('auth/customer_register') ?>">Muhsin</a> 2024
                         </div>
                     </div>
                 </div>
